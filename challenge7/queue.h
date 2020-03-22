@@ -9,12 +9,12 @@
 
 typedef struct queue queue;
 struct queue {
-    int capacity;
+    size_t capacity;
     int *values;
-    int length;
+    size_t length;
 };
 
-queue * init_queue(int max_size);
+queue * init_queue(size_t max_size);
 
 int pop_queue(queue *q);
 
@@ -22,6 +22,5 @@ queue * add_queue(queue *q, int elt);
 
 size_t length_queue(queue *q);
 
-size_t capacity_queue(queue *q);
 
 #endif //MODERN_C_QUEUE_H

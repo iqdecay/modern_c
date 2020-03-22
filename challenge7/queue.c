@@ -7,7 +7,7 @@
 #include "queue.h"
 
 
-queue *init_queue(int max_size)
+queue *init_queue(size_t max_size)
 {
   queue *q = malloc(sizeof(queue *));
   q->values = malloc(sizeof(int[max_size]));
