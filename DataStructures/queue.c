@@ -62,3 +62,19 @@ int pop_queue(queue *q)
   }
 }
 
+int reverse_queue(queue *q)
+{
+  size_t size = q->length;
+  queue *reversed = init_queue(size);
+  int current;
+  for (size_t i = 0; i< size; i++){
+    current = pop_queue(q);
+    reversed->values[size - i -1] = current;
+  }
+  *q = (queue){
+    .values = reversed->values,
+    .length = size,
+    .capacity = q->capacity
+  };
+  return 1;
+}

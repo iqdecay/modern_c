@@ -29,25 +29,25 @@ queue *bfs_graph(adjaMatrix *a, int root)
   return res;
 }
 
-int main(void)
-{
-  // First, build an undirected graph
-  int size = 10;
-  queue *q = init_queue(size);
-  adjaMatrix *a = init_adja(size);
-  add_link(a, 0, 1, 1);
-  add_link(a, 0, 2, 1);
-  add_link(a, 1, 3, 1);
-  add_link(a, 2, 4, 1);
-  add_link(a, 2, 5, 1);
-  add_link(a, 3, 6, 1);
-  add_link(a, 4, 7, 1);
-  add_link(a, 4, 8, 1);
-  add_link(a, 5, 9, 1);
-  queue *r = bfs_graph(a, 2);
-  for (size_t i = 0; i < size; i++) {
-    printf("%i \n", pop_queue(r));
-  }
-}
+//int main(void)
+//{
+//  // First, build an undirected graph
+//  int size = 10;
+//  queue *q = init_queue(size);
+//  adjaMatrix *a = init_adja(size);
+//  add_link(a, 0, 1, 1);
+//  add_link(a, 0, 2, 1);
+//  add_link(a, 1, 3, 1);
+//  add_link(a, 2, 4, 1);
+//  add_link(a, 2, 5, 1);
+//  add_link(a, 3, 6, 1);
+//  add_link(a, 4, 7, 1);
+//  add_link(a, 4, 8, 1);
+//  add_link(a, 5, 9, 1);
+//  queue *r = bfs_graph(a, 2);
+//  for (size_t i = 0; i < size; i++) {
+//    printf("%i \n", pop_queue(r));
+//  }
+//}
 
 

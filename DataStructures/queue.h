@@ -22,5 +22,7 @@ queue * add_queue(queue *q, int elt);
 
 size_t length_queue(queue *q);
 
+int reverse_queue(queue *q);
+
 
 #endif //MODERN_C_QUEUE_H
